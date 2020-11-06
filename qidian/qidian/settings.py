@@ -64,6 +64,8 @@ DOWNLOAD_DELAY = 2
 # See https://docs.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    'qidian.pipelines.QidianPipeline': 300,
+   'qidian.pipelines.mysqlPipLine': 301,
+   # 300表示优先级， 数值越小， 越优先执行
 }
 
 # Enable and configure the AutoThrottle extension (disabled by default)
